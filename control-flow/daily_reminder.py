@@ -14,9 +14,14 @@ match priority:
     case _:
         reminder = f"Invalid priority input for task: '{task}'. Please enter high, medium, or low."
 
-# Modify the reminder if the task is time-bound
-if time_bound == "yes" and priority in ["high", "medium", "low"]:
-    reminder += " That requires immediate attention today!"
+# Final reminder message formatting
+print(f"Reminder: '{task}' is a {priority} priority task.", end="")
+
+# Add urgency if time-bound
+if time_bound == "yes":
+    print(" That requires immediate attention today!")
+else:
+    print(" Consider completing it when you have free time.")
 
 # Print the customized reminder
 print(reminder)
