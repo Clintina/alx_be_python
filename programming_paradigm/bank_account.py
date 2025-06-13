@@ -21,10 +21,3 @@ class BankAccount:
 
     def display_balance(self):
         print(f"Current Balance: ${self.account_balance:.2f}")
-# ...existing code...
-
-if __name__ == "__main__":
-    account = BankAccount(100)
-    account.deposit(50)
-    account.withdraw(30)
-    account.display_balance()
