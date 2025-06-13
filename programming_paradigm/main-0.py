@@ -2,8 +2,7 @@ from bank_account import BankAccount
 
 account = BankAccount(100)
 account.deposit(50)
-# Try to withdraw more than the balance
-account.withdraw(500)  # This will print "Insufficient funds." from the method
+account.withdraw(500) # Only the method prints this message
 account.display_balance()
 
 class BankAccount:
