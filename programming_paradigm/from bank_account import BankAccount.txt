@@ -1,6 +1,0 @@
-from bank_account import BankAccount
-
-account = BankAccount(100)
-account.deposit(50)
-account.withdraw(30)
-account.display_balance()
